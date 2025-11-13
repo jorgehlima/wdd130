@@ -53,9 +53,15 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 
 p {
-    padding: 0;
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+head {
+    background-color: var(--primary-color);
 }
