@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #004080;
     --secondary-color: #e0e0e0;
@@ -14,17 +20,15 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0 0 0 / 0.2); /* 1*/
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    float: right; /* This will make the image float to the right */
+    marging: 0 0 1rem 1rem; /* This will add space so the text won't touch the image */
 }
 
 footer {
@@ -39,6 +43,7 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 nav {
@@ -65,3 +70,12 @@ p {
 head {
     background-color: var(--primary-color);
 }
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #e0e0e0;
+  color: #333;
+}
+
