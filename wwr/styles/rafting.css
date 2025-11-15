@@ -1,0 +1,116 @@
+/* Jorge Lima - 15 November 2025 */
+
+/* CSS Variables */
+:root {
+  --primary-color: #2c5f2d; /* deep forest green */
+  --secondary-color: #97c4b8; /* soft aqua */
+  --accent1-color: #1a1a2e; /* dark navy */
+  --accent2-color: #f5f5dc; /* beige/cream */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: "Arial", "Helvetica", sans-serif;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Page Width and Centering */
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Styling the heading */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Consistent Spacing and padding */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Remove Underlines from Social Media Links */
+.Socialmedia a {
+  text-decoration: none;
+}
+
+/* Social Media Icon Sizing */
+.Socialmedia img {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero H1 Overlay */
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.8;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* Hero Article Overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 0 0 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Styling */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+}
+
+footer {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+section h2 {
+  margin-bottom: 12px;
+}
