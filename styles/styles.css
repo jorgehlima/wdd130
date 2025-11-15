@@ -22,7 +22,8 @@ nav a {
 
 h1 {
     color: steelblue;
-    padding: 5rem;
+    text-align: left;
+    margin: 1rem 0;
 }
 
 main {
@@ -50,7 +51,7 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 285px;
     height: auto;
     float: right; /* This will make the image float to the right */
     margin: 0 0 1rem; /* This will add space so the text won't touch the image */
