@@ -4,18 +4,43 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #004080;
-    --secondary-color: #e0e0e0;
-    --accent-color: #ffcc00;
-    --text-color: #333;
-    --heading-font: 'Georgia', serif;
-    --body-font: 'Arial', sans-serif;
-    --max-width: 1200px;
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: steelblue;
+    padding: 5rem;
 }
 
 main {
-    max-width: 840px;
+    max-width: 640px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
 }
 
 aside {
@@ -28,7 +53,13 @@ aside img {
     width: 200px;
     height: auto;
     float: right; /* This will make the image float to the right */
-    marging: 0 0 1rem 1rem; /* This will add space so the text won't touch the image */
+    margin: 0 0 1rem; /* This will add space so the text won't touch the image */
+}
+
+aside h2 {
+    position: absolute;
+    top: 50px;
+    left: 84px;
 }
 
 footer {
@@ -37,45 +68,15 @@ footer {
     text-align: center;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-}
-
-p {
-    color: var(--text-color);
-    font-family: var(--body-font);
-}
-
-head {
-    background-color: var(--primary-color);
-}
 /* Class Selectors */
 .box {
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  background-color: #e0e0e0;
-  color: #333;
+  background-color: #eee;
+  color: #000;
 }
 
+.indent {
+    padding-left: 2rem;
+}
