@@ -28,7 +28,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff; /% shorthand for white %/
+    color: #fff; /* shorthand for white */
 }
 
 h1 {
@@ -37,10 +37,10 @@ h1 {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 20rem 1fr;  /* aside left, main right */
-  align-items: start;
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: start;
+    gap: 1rem;
 }
 
 main {
@@ -72,8 +72,7 @@ aside {
 aside img {
     width: 285px;
     height: auto;
-    float: right; /* This will make the image float to the right */
-    margin: 0 0 1rem; /* This will add space so the text won't touch the image */
+    margin: 0 0 1rem;
 }
 
 aside h2 {
@@ -84,11 +83,11 @@ aside h2 {
 
 /* Class Selectors */
 .box {
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: #eee;
-  color: #000;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
 }
 
 .indent {
