@@ -1,116 +1,165 @@
-/* Jorge Lima - 15 November 2025 */
-
-/* CSS Variables */
-:root {
-  --primary-color: #2c5f2d; /* deep forest green */
-  --secondary-color: #97c4b8; /* soft aqua */
-  --accent1-color: #1a1a2e; /* dark navy */
-  --accent2-color: #f5f5dc; /* beige/cream */
-  --heading-font: "Georgia", "Times New Roman", serif;
-  --body-font: "Arial", "Helvetica", sans-serif;
-}
-
-/* CSS Reset */
+/* -------------------- */
+/* GLOBAL RESET & BASE  */
+/* -------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Page Width and Centering */
-header, main, footer {
-  max-width: 840px;
-  margin: 0 auto;
+/* -------------------- */
+/* HEADER STYLING       */
+/* -------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a4d6e;
 }
 
-/* Styling the heading */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+.header img {
+    height: 70px;
+    border-radius: 10px;
 }
 
-/* Consistent Spacing and padding */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-/* Remove Underlines from Social Media Links */
-.Socialmedia a {
-  text-decoration: none;
+.header nav a:hover {
+    text-decoration: underline;
 }
 
-/* Social Media Icon Sizing */
-.Socialmedia img {
-  width: 40px;
-  height: 40px;
-  margin: 0 8px;
-}
-
-/* Hero Section */
+/* -------------------- */
+/* HERO SECTION         */
+/* -------------------- */
 .hero {
-  position: relative;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+.hero-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
 }
 
-/* Hero H1 Overlay */
-h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.8;
-  background-color: var(--accent1-color);
-  color: #fff;
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px black;
 }
 
-/* Hero Article Overlay */
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
-  margin: 0 0 8px 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    border-radius: 10px;
 }
 
-/* Additional Styling */
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 16px;
-}
-
-footer {
-  background-color: var(--accent1-color);
-  color: var(--accent2-color);
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+/* -------------------- */
+/* HISTORY SECTION      */
+/* -------------------- */
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 section h2 {
-  margin-bottom: 12px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1a4d6e;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.history-grid p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ----------------------------- */
+/* ADVENTURE HORIZONTAL GALLERY  */
+/* ----------------------------- */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.adventures figure {
+    margin: 0;
+}
+
+.adventures img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.adventures figcaption {
+    margin-top: .5rem;
+    font-weight: bold;
+    font-size: .9rem;
+    color: #333;
+}
+
+/* -------------------- */
+/* FOOTER               */
+/* -------------------- */
+footer {
+    background-color: #1a4d6e;
+    color: white;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between; /* LEFT TEXT + RIGHT ICONS */
+    align-items: center;
+}
+
+/* Social media container */
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    display: block;
 }
