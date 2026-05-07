@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../html/XYZBookstore"
+		},
+		{
+			"name": "wdd130",
+			"path": "../../../Term 6/WDD130/wdd130"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
