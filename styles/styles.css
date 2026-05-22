@@ -30,8 +30,9 @@ h1 {
     color: var(--primary-color);
 }
 
+/*my picture */
 main img {
-    width: 150px;
+    width: 130px;
     height: auto;
     border: var(--border-style) black;
     padding: 2px;
