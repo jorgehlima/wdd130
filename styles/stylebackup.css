@@ -16,36 +16,21 @@ body {
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 2rem;
 }
 
 nav a {
+    color: white;
     display: block;
-    padding: 0.5rem;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
+    padding: 20px;
 }
 
 h1 {
     color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-}
-
-.grid {
-    display: grid;
-    align-items: center;
-}
-
-main {
-    grid-column: 2/3;
-    margin: 1rem;
 }
 
 /*my picture */
@@ -56,12 +41,16 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 1rem 0 1rem 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
     padding: 0;
     margin: 1rem;
+}
+
+main {
+    max-width: 840px;
 }
 
 aside {
@@ -73,8 +62,6 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 aside img {
@@ -94,17 +81,10 @@ footer {
     text-align: center;
 }
 
-header,
-footer,
-.grid {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0 0 0 .1);
+    border: 1px solid rgba 0 0 0 .1;
     padding: 1rem;
     background-color: #eee;
     color: #000;
