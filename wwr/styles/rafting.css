@@ -66,8 +66,8 @@ article {
 
 /* Navigation layout with flexbox */
 nav {
-    display: flex-grow;
-    justify-content: space-end;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 16px;
 
@@ -229,11 +229,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    max-width: 950px;
-    margin: 0 auto;
     padding: 16px 24px;
-
     background-color: var(--background-color);
 }
 
