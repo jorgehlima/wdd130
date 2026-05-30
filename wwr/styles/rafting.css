@@ -34,7 +34,7 @@ header {
     padding: 16px 24px;
 
     background-color: var(--background-color);
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom: 4px solid var(--accent2-color1);
 }
 
 /* Logo */
@@ -93,8 +93,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .hero {
