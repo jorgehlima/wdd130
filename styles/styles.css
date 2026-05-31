@@ -40,7 +40,9 @@ h1 {
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    align-items: start;
 }
 
 main {
