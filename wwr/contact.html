@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Step 1: meta/title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wild Waters Rafting Co.</title>
+
+    <!-- Step 2: meta description -->
+    <meta name="description"
+      content="Contact Wild Waters Rafting Co. for trips reservations, questions, customer support, and information about our exciting rafting adventures.">
+
+    <!-- Step 3: meta author -->
+    <meta name="author" content="Jorge Henrique de Souza Lima">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html">
+            <img src="images/logo.jpg" alt="Go to home page">
+        </a>
+
+        <!-- navigation list -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" aria-current="page">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- section element with company info -->
+        <section class="company-info">
+            <h1>Wild Water Rafting Co.</h1>
+            <address>
+                <strong>123 River Adventure Road</strong><br>
+                Wilmington, NC 28403<br>
+                <a href="tel:+19999999999">Phone: (435) 123-RAFT</a><br>
+                <a href="mailto:info@wildwaterrafting.com">info@wildwaterrafting.com</a>
+            </address>
+        </section>
+
+        <!-- map + form -->
+        <div class="contact-grid">
+
+            <!-- google map -->
+            <section class="map-wrap" aria-label="Map showing our location">
+                <iframe title="Google Maps location of Wild Water Rafting Co., Wilmington, NC"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.9!2d-77.9447!3d34.2257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f5f5f5f5f5f5%3A0x0!2sWilmington%2C+NC+28403!5e0!3m2!1sen!2sus!4v1690000000000"
+                  allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form" aria-labelledby="form-deading">
+                <h2 id="form-heading">Get in Touch</h2>
+
+                <form action="#" method="post" novalidate>
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name"
+                          required autocomplete="name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com"
+                          required autocomplete="email">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Message<br>Purpose</label>
+                        <div class="radio-group" role="radiogroup" aria-label="Message purpose">
+                            <label>
+                                <input type="radio" name="purpose" value="general" checked>General
+                                Inquiry
+                            </label>
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">Reservation
+                                question
+                            </label>
+                            <label>
+                                <input type="radio" name="purpose" value="suggestion">Website
+                                suggestion
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"
+                          placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <label class="newsletter-row">
+                        <input type="checkbox" name="newsletter" value="yes" checked>Please
+                        subscribe me to the monthly newsletter.
+                    </label>
+
+                    <button type="submit" class="btn-submit">Get in touch!</button>
+
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                  src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
+        <!-- Section 7: footer element w/ copyright/year/rafting co name/my  name -->
+        <p>
+            &copy; 2026 Wild Waters Rafting Co. | Jorge Lima
+        </p>
+        <!-- Section 7: nav element class assignment "socialmedia"/ 3 "img" encased by "a"anchor three social media outlets -->
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-square.svg" alt="Facebook Icon">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin-square.svg" alt="LinkedIn Icon">
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-square.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
