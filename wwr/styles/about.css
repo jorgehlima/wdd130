@@ -27,6 +27,19 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    padding: 16px 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    mix-blend-mode: multiply;
+    width: 150px;
+    height: auto;
 }
 
 h1,
@@ -35,32 +48,57 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
+p {
     margin: 16px;
     padding: 8px;
     position: absolute;
 }
 
-.socialmedia a {
-    text-decoration: none;
+nav {
+    margin: 16px;
+    padding: 8px;
+}
+
+section {
+    margin: 16px;
+    padding: 8px;
 }
 
 .hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: #fff;
+    overflow: hidden;
+    margin: 0 8px 0 8px;
 }
 
 .hero article img {
-    float: right;
+    float: none;
     width: 125px;
+    height: auto;
+    flex-shrink: 0;
+    order: 1;
+}
+
+.hero article p {
+    position: static;
+    margin: 0;
+    padding: 0;
+    order: 0;
+    color: #fff;
 }
 
 h1 {
@@ -73,4 +111,85 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
     /* white text - make sure there is enough contrast with the background-color */
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    /* left text | image | right text */
+    align-items: center;
+    gap: 20px;
+    padding: 24px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    /* still spans all 3 columns */
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: 0.7;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.history p.left {
+    text-align: right;
+}
+
+.history p.right {
+    text-align: left;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: 0.7;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.adventures {
+    width: 100%;
+    margin: 0;
+    padding: 24px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* copyright left, icons right */
+    padding: 16px 0;
+    background-color: var(--accent1-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* icons */
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    display: block;
 }
