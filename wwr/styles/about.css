@@ -25,21 +25,40 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 16px 0;
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 180px 1fr;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
+    padding: 8px 0;
 }
 
 header img {
-    mix-blend-mode: multiply;
-    width: 150px;
+    width: 120px;
     height: auto;
+    mix-blend-mode: multiply;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    gap: 1.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
 }
 
 h1,
