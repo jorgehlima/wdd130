@@ -44,9 +44,10 @@ header img {
 }
 
 header nav {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, auto);
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -70,7 +71,6 @@ h2 {
 p {
     margin: 16px;
     padding: 8px;
-    position: absolute;
 }
 
 nav {
@@ -92,32 +92,34 @@ section {
 .hero article {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 16px;
-    background-color: rgba(38, 70, 83, 0.85);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.45);
+    color: var(--accent1-color);
+    border: 1px solid #ccc;
+    margin: 0 0 16px 0;
     overflow: hidden;
-    margin: 0 8px 0 8px;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    order: 0;
+    color: var(--accent1-color);
+    flex: 1;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.45);
 }
 
 .hero article img {
-    float: none;
     width: 125px;
     height: auto;
     flex-shrink: 0;
     order: 1;
-}
-
-.hero article p {
-    position: static;
-    margin: 0;
-    padding: 0;
-    order: 0;
-    color: #fff;
 }
 
 h1 {
@@ -125,90 +127,134 @@ h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
+    font-size: 3rem;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-    /* white text - make sure there is enough contrast with the background-color */
+    background-color: transparent;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    opacity: 0.90;
 }
 
 .history {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    /* left text | image | right text */
-    align-items: center;
+    grid-template-rows: auto 1fr;
     gap: 20px;
+    align-items: center;
     padding: 24px 0;
-    width: 100%;
+}
+
+/* Title */
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.2rem;
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 16px;
     margin: 0;
 }
 
-.history h2 {
-    grid-column: 1 / -1;
-    /* still spans all 3 columns */
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--accent1-color);
-    opacity: 0.7;
-    color: #fff;
-    margin-bottom: 8px;
-}
-
-.history img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
+/* Left paragraph */
 .history p.left {
+    grid-column: 1;
+    grid-row: 2;
     text-align: right;
 }
 
+/* Center Image */
+.history img {
+    grid-column: 2;
+    grid-row: 2;
+    width: 250px;
+    height: auto;
+    justify-self: center;
+}
+
+/* Right paragraph */
 .history p.right {
+    grid-column: 3;
+    grid-row: 2;
     text-align: left;
 }
 
+/* Adventure Awaits You Section */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    gap: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 24px 0;
+}
+
+/* Adventure Title */
 .adventures h2 {
     grid-column: 1 / -1;
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: var(--accent1-color);
-    opacity: 0.7;
-    color: #fff;
+    font-size: 2.2rem;
+    background-color: transparent;
+    color: var(--secondary-color);
     margin-bottom: 8px;
 }
 
-.adventures {
+.adventures figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+}
+
+.adventures figure img {
     width: 100%;
-    margin: 0;
-    padding: 24px 0;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.adventures figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 6px 4px;
+    color: var(--accent1-color);
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* copyright left, icons right */
-    padding: 16px 0;
+    gap: 2rem;
+    padding: 16px 24px;
     background-color: var(--accent1-color);
+    max-width: 1100px;
+    opacity: 0.7;
+    color: #fff;
+    margin-bottom: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+footer p {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
 .socialmedia {
     display: flex;
     align-items: center;
     gap: 14px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
 }
 
-/* icons */
 .socialmedia img {
     width: 32px;
     height: 32px;
     display: block;
+    filter: none;
 }
