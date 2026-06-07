@@ -7,6 +7,7 @@
     --foam-white: #f4f8fa;
     --stone-gray: #6c7a80;
     --rapid-orange: #e07b39;
+    --background-color: #fcfbfc;
     --radius: 8px;
     /* Font */
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -24,6 +25,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--background-color);
 }
 
 header {
