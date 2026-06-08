@@ -14,6 +14,12 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Utility: card surface */
 .card-surface {
     background: var(--foam-white);
@@ -46,7 +52,6 @@ header {
 header img {
     width: 150px;
     height: auto;
-    mix-blend-mode: multiply;
 }
 
 header nav {
@@ -58,7 +63,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #f4a261;
+    color: #c7661a;
     font-weight: bold;
     padding: 0.5rem;
 }
@@ -331,7 +336,7 @@ footer {
     grid-column: 2;
     justify-self: center;
     margin: 0;
-    color: #f4a261;
+    color: #c7661a;
     text-align: center;
 }
 
