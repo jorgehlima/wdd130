@@ -1,3 +1,5 @@
+/* 8 June 2026 */
+
 :root {
     --primary-color: #055a05;
     /* forest green */
@@ -8,6 +10,8 @@
     --aceent2-color: #e9c46a;
     /* light golden yellow */
     --background-color: #fcfbfc;
+
+    /* Font */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -33,36 +37,53 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 2rem;
     padding: 8px 0;
-    background-color: #055a05;
-    opacity: 0.65;
+
+    background-color: rgba(5, 90, 5, 0.65);
 }
 
 header img {
     width: 150px;
     height: auto;
-}
-
-header nav {
-    display: flex;
-    grid-template-columns: repeat(4, auto);
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1.5rem;
+    justify-self: start;
 }
 
 header nav a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     font-weight: bold;
     padding: 0.5rem;
+    position: relative;
+    display: inline-block;
 }
 
-header nav a:hover {
-    color: var(--primary-color);
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    justify-self: end;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
 }
 
 h1,
@@ -243,7 +264,7 @@ footer p {
     text-align: center;
     margin: 0;
     padding: 0;
-    color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 .socialmedia {

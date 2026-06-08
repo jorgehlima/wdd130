@@ -3,21 +3,17 @@
 :root {
     --contact-border: #d0dde3;
     --contact-shadow: 0 2px 12px rgba(11, 79, 108, .10);
-    /* uses --primary-color hue */
+    --accent1-color: #264653;
+    --secondary-color: #c7661a;
     --foam-white: #f4f8fa;
     --stone-gray: #6c7a80;
     --rapid-orange: #e07b39;
     --background-color: #fcfbfc;
+    --primary-color: #055a05;
     --radius: 8px;
     /* Font */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /* Utility: card surface */
@@ -45,13 +41,13 @@ header {
     gap: 2rem;
     min-height: 80px;
     padding: 8px 0;
-    background-color: #055a05;
-    opacity: 0.65;
+    background-color: rgba(5, 90, 5, 0.65);
 }
 
 header img {
     width: 150px;
     height: auto;
+    justify-self: start;
 }
 
 header nav {
@@ -63,25 +59,33 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #c7661a;
+    color: var(--accent1-color);
     font-weight: bold;
     padding: 0.5rem;
+    padding-bottom: 4px;
 }
 
-header nav a:hover {
-    color: var(--primary-color);
-}
-
-/* Nav links – base file styles nav a; add border + transition */
+/* Nav links – sliding underline on hover */
 nav a {
-    border: 1.5px solid transparent;
-    transition: background-color 0.3s ease, border-color 0.2s;
+    border: none;
+    position: relative;
+    padding-bottom: 4px;
 }
 
-nav a:hover,
-nav a[aria-current="page"] {
-    background-color: rgba(255, 255, 255, .18);
-    border-color: rgba(255, 255, 255, .70);
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--rapid-orange, #e07b39);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a[aria-current="page"]::after {
+    width: 100%;
 }
 
 /* Main */
@@ -325,18 +329,19 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     padding: 16px 24px;
-    background-color: #055a05;
-    opacity: 0.65;
+
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
+
+    background-color: rgba(5, 90, 5, 0.65);
 }
 
 .copyright {
     grid-column: 2;
     justify-self: center;
     margin: 0;
-    color: #c7661a;
+    color: var(--accent1-color);
     text-align: center;
 }
 
