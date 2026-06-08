@@ -254,9 +254,18 @@ footer p {
     margin-left: auto;
 }
 
-.socialmedia img {
-    width: 32px;
-    height: 32px;
+.footer-inner .copyright {
+    color: rgba(255, 255, 255, .65);
+}
+
+/* Social media icons */
+.socialmedia a img {
+    width: 24px;
+    height: 24px;
     display: block;
     filter: none;
+}
+
+.socialmedia a:hover img {
+    opacity: 1;
 }
