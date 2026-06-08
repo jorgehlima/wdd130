@@ -37,6 +37,8 @@ header {
     align-items: center;
     gap: 2rem;
     padding: 8px 0;
+    background-color: #055a05;
+    opacity: 0.65;
 }
 
 header img {
@@ -55,7 +57,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     font-weight: bold;
     padding: 0.5rem;
 }
@@ -232,7 +234,7 @@ footer {
     padding: 16px 24px;
     background-color: var(--primary-color);
     max-width: 1100px;
-    opacity: 0.7;
+    opacity: 0.65;
     color: #fff;
     margin-bottom: 8px;
 }
@@ -242,7 +244,7 @@ footer p {
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .socialmedia {
