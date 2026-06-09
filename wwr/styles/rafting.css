@@ -1,100 +1,110 @@
-/* 8 June 2026*/
+/* 8 June 2026 */
 
+/* Variables */
 :root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #c7661a;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --background-color: #fcfbfc;
+
     --contact-border: #d0dde3;
     --contact-shadow: 0 2px 12px rgba(11, 79, 108, .10);
-    /* uses --primary-color hue */
-    --foam-white: #f4f8fa;
     --stone-gray: #6c7a80;
     --rapid-orange: #e07b39;
-    --background-color: #fcfbfc;
     --radius: 8px;
+
     /* Font */
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Oswald", sans-serif;
+    --body-font: "Lato", sans-serif;
 }
 
-/* Utility: card surface */
-.card-surface {
-    background: var(--foam-white);
-    border: 1px solid var(--contact-border);
-    border-radius: var(--radius);
-    box-shadow: var(--contact-shadow);
-}
-
-body {
+/* Global Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Elements */
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: var(--background-color);
 }
 
-header {
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+/* Shared Layout */
+header,
+main,
+footer {
     max-width: 1100px;
-    width: 100%;
     margin: 0 auto;
+}
+
+/* Header */
+header {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    justify-content: space-between;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 2rem;
-    min-height: 80px;
-    padding: 8px 0;
-
+    padding: 8px 24px;
     background-color: rgba(5, 90, 5, 0.65);
 }
 
 header img {
     width: 150px;
     height: auto;
+    justify-self: start;
 }
 
 header nav {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     gap: 1.5rem;
+    justify-self: end;
 }
 
 header nav a {
     text-decoration: none;
     color: var(--accent1-color);
-    font-weight: bold;
     padding: 0.5rem;
-    padding-bottom: 4px;
-}
-
-/* Nav links – sliding underline on hover */
-nav a {
-    border: none;
     position: relative;
-    padding-bottom: 4px;
+    display: inline-block;
 }
 
-nav a::after {
+header nav a::after {
     content: "";
     position: absolute;
-    bottom: 0;
     left: 0;
-    width: 0;
+    bottom: 0;
+    width: 100%;
     height: 2px;
-    background-color: var(--rapid-orange, #e07b39);
-    transition: width 0.3s ease;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
-nav a:hover::after,
-nav a[aria-current="page"]::after {
-    width: 100%;
+header nav a:hover::after,
+header nav a[aria-current="page"]::after {
+    transform: scaleX(1);
 }
 
 /* Main */
 main {
-    max-width: 1100px;
-    margin: 0 auto;
     padding: 2.5rem 1.5rem 3rem;
 }
 
-/* Company info block */
+/* Company Info */
 .company-info {
     text-align: center;
     margin-bottom: 2.5rem;
@@ -103,7 +113,6 @@ main {
 .company-info h1 {
     font-size: 2.2rem;
     margin-bottom: .75rem;
-    /* font-family & color already set by h1, h2 rule in base */
 }
 
 .company-info address {
@@ -121,7 +130,7 @@ main {
     text-decoration: underline;
 }
 
-/* Two-column grid (map + form) */
+/* Contact Grid (map/form) */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,14 +144,13 @@ main {
     }
 }
 
-/* Map wrapper */
+/* Map */
 .map-wrap {
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--contact-border);
     box-shadow: var(--contact-shadow);
     line-height: 0;
-    /* removes gap below inline iframe */
 }
 
 .map-wrap iframe {
@@ -152,13 +160,11 @@ main {
     border: 0;
 }
 
-/* Contact form card */
+/* Contact Form */
 .contact-form {
     padding: 1.75rem 2rem;
-    /* visual treatment via .card-surface utility class */
 }
 
-/* Label + field two-column row */
 .form-row {
     display: grid;
     grid-template-columns: 110px 1fr;
@@ -170,12 +176,10 @@ main {
 .form-row > label {
     font-size: .9rem;
     font-weight: bold;
-    /* matches nav a weight in base */
     color: var(--stone-gray);
     padding-top: .5rem;
 }
 
-/* Text / email inputs and textarea share identical box styling */
 .form-row input[type="text"],
 .form-row input[type="email"],
 .form-row textarea {
@@ -184,7 +188,6 @@ main {
     border: 1px solid var(--contact-border);
     border-radius: var(--radius);
     font-family: var(--body-font);
-    /* reuse base token */
     font-size: .95rem;
     background: #fff;
     transition: border-color .2s, box-shadow .2s;
@@ -195,7 +198,8 @@ main {
 .form-row textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(11, 79, 108, .15);
+    box-shadow: 0 0 0 3px rgba(5, 90, 5, .15);
+    /* updated to match --primary-color green */
 }
 
 .form-row textarea {
@@ -203,7 +207,7 @@ main {
     resize: vertical;
 }
 
-/* Radio button group */
+/* Radio Group */
 .radio-group {
     display: flex;
     flex-direction: column;
@@ -221,15 +225,14 @@ main {
     padding-top: 0;
 }
 
-.radio-group input[type="radio"],
-.newsletter-row input[type="checkbox"] {
+.radio-group input[type="radio"] {
     accent-color: var(--primary-color);
     width: 16px;
     height: 16px;
     cursor: pointer;
 }
 
-/* Newsletter checkbox row */
+/* Newsletter Row */
 .newsletter-row {
     display: flex;
     align-items: center;
@@ -240,16 +243,18 @@ main {
 }
 
 .newsletter-row input[type="checkbox"] {
-    flex-shrink: 0;
+    accent-color: var(--primary-color);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
 
-/* Submit button */
+/* Submit Button */
 .btn-submit {
     width: 100%;
     padding: .75rem;
     background: var(--rapid-orange);
-    color: var(--accent1-color);
-
+    color: #fff;
     border: none;
     border-radius: var(--radius);
     font-family: var(--body-font);
@@ -268,11 +273,12 @@ main {
     transform: scale(.98);
 }
 
-/* Team / employee section */
+/* Team Section */
 .team-section {
     border: 1px solid var(--contact-border);
     border-radius: var(--radius);
     padding: 2rem;
+    margin-top: 2.5rem;
 }
 
 .team-section h2 {
@@ -285,12 +291,6 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-}
-
-@media (max-width: 600px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .team-card {
@@ -323,28 +323,30 @@ main {
     color: var(--stone-gray);
 }
 
-/* Footer */
-footer {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 16px 24px;
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
+/* Footer section */
+footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-
-    background-color: var(--primary-color, #5f7a8a);
+    padding: 16px 24px;
+    background-color: rgba(5, 90, 5, 0.65);
+    margin-bottom: 8px;
 }
 
 .copyright {
     grid-column: 2;
     justify-self: center;
     margin: 0;
-    color: white;
+    color: var(--accent1-color);
     text-align: center;
 }
 
-/* socialmedia icons on the right */
 .socialmedia {
     grid-column: 3;
     justify-self: end;
@@ -354,13 +356,8 @@ footer {
     padding: 0;
 }
 
-/* Social media icons */
 .socialmedia a img {
     width: 24px;
     height: 24px;
     filter: none;
-}
-
-.socialmedia a:hover img {
-    opacity: 1;
 }
