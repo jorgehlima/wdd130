@@ -1,15 +1,13 @@
-/* 6 June 2026*/
+/* 8 June 2026*/
 
 :root {
     --contact-border: #d0dde3;
     --contact-shadow: 0 2px 12px rgba(11, 79, 108, .10);
-    --accent1-color: #264653;
-    --secondary-color: #c7661a;
+    /* uses --primary-color hue */
     --foam-white: #f4f8fa;
     --stone-gray: #6c7a80;
     --rapid-orange: #e07b39;
     --background-color: #fcfbfc;
-    --primary-color: #055a05;
     --radius: 8px;
     /* Font */
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -25,6 +23,7 @@
 }
 
 body {
+    margin: 0;
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: var(--background-color);
@@ -41,13 +40,13 @@ header {
     gap: 2rem;
     min-height: 80px;
     padding: 8px 0;
+
     background-color: rgba(5, 90, 5, 0.65);
 }
 
 header img {
     width: 150px;
     height: auto;
-    justify-self: start;
 }
 
 header nav {
@@ -334,14 +333,14 @@ footer {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
 
-    background-color: rgba(5, 90, 5, 0.65);
+    background-color: var(--primary-color, #5f7a8a);
 }
 
 .copyright {
     grid-column: 2;
     justify-self: center;
     margin: 0;
-    color: var(--accent1-color);
+    color: white;
     text-align: center;
 }
 

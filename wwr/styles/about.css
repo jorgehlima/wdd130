@@ -12,8 +12,8 @@
     --background-color: #fcfbfc;
 
     /* Font */
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Oswald", sans-serif;
+    --body-font: "Lato", sans-serif;
 }
 
 * {
@@ -87,9 +87,9 @@ header nav a:hover::after {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 p {
@@ -254,7 +254,7 @@ footer {
     padding: 16px 24px;
     background-color: var(--primary-color);
     max-width: 1100px;
-    opacity: 0.65;
+    background-color: rgba(5, 90, 5, 0.65);
     color: #fff;
     margin-bottom: 8px;
 }
