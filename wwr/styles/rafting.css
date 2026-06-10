@@ -12,8 +12,8 @@
 
     --contact-border: #d0dde3;
     --contact-shadow: 0 2px 12px rgba(11, 79, 108, .10);
-    --stone-gray: #6c7a80;
-    --rapid-orange: #e07b39;
+    --stone-gray: #5e6d74;
+    --rapid-orange: #b85e1f;
     --radius: 8px;
 
     /* Font */
@@ -75,7 +75,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: var(--accent1-color);
+    color: #ffffff;
     padding: 0.5rem;
     position: relative;
     display: inline-block;
@@ -266,7 +266,7 @@ main {
 }
 
 .btn-submit:hover {
-    background-color: #c96a28;
+    background-color: #9e4f18;
 }
 
 .btn-submit:active {
@@ -343,7 +343,7 @@ footer {
     grid-column: 2;
     justify-self: center;
     margin: 0;
-    color: var(--accent1-color);
+    color: #ffffff;
     text-align: center;
 }
 
