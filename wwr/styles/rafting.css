@@ -17,8 +17,8 @@
     --radius: 8px;
 
     /* Font */
-    --heading-font: "Oswald", sans-serif;
-    --body-font: "Lato", sans-serif;
+    --heading-font: "Arial Narrow", Arial, sans-serif;
+    --body-font: "Arial", Helvetica, sans-serif;
 }
 
 /* Global Reset */
