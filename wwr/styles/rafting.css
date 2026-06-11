@@ -443,6 +443,7 @@ footer {
     font-size: 1.6rem;
     margin-bottom: 1.75rem;
     text-align: center;
+    color: var(--secondary-color);
 }
 
 .team-grid {
