@@ -173,6 +173,7 @@ footer {
 
 /*  mission statement section - About us page */
 .hero article img {
+    float: right;
     order: 2;
     width: 150px;
     height: auto;
