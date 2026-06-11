@@ -38,144 +38,142 @@
 
     <main>
 
-        <main>
-            <!-- Hero -->
-            <div class="hero">
-                <h1>Contact Us</h1>
-                <p>We are here to serve you!</p>
-            </div>
+        <!-- Hero -->
+        <div class="hero">
+            <h1>Contact Us</h1>
+            <p>We are here to serve you!</p>
+        </div>
 
-            <!-- section element with company info -->
-            <section class="company-info">
-                <h1>Rafting Travel Corporation</h1>
-                <address>
-                    <strong>123 River Adventure Road</strong><br>
-                    Wilmington, NC 28403<br>
-                    <a href="tel:+19999999999">Phone: (435) 123-RAFT</a><br>
-                    <a href="mailto:info@raftingtravelco.com">info@wildwaterrafting.com</a>
-                </address>
+        <!-- section element with company info -->
+        <section class="company-info">
+            <h1>Rafting Travel Corporation</h1>
+            <address>
+                <strong>123 River Adventure Road</strong><br>
+                Wilmington, NC 28403<br>
+                <a href="tel:+19999999999">Phone: (435) 123-RAFT</a><br>
+                <a href="mailto:info@raftingtravelco.com">info@wildwaterrafting.com</a>
+            </address>
+        </section>
+
+        <!-- map + form -->
+        <div class="contact-grid">
+
+            <!-- google map -->
+            <section class="map-wrap" aria-label="Map showing our location">
+                <iframe title="Google Maps location of Wild Water Rafting Co., Wilmington, NC"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.9!2d-77.9447!3d34.2257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f5f5f5f5f5f5%3A0x0!2sWilmington%2C+NC+28403!5e0!3m2!1sen!2sus!4v1690000000000"
+                  allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </section>
 
-            <!-- map + form -->
-            <div class="contact-grid">
+            <!-- Contact Form -->
+            <section class="contact-form" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact Us</h2>
 
-                <!-- google map -->
-                <section class="map-wrap" aria-label="Map showing our location">
-                    <iframe title="Google Maps location of Wild Water Rafting Co., Wilmington, NC"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.9!2d-77.9447!3d34.2257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f5f5f5f5f5f5%3A0x0!2sWilmington%2C+NC+28403!5e0!3m2!1sen!2sus!4v1690000000000"
-                      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </section>
+                <form action="#" method="post" novalidate>
 
-                <!-- Contact Form -->
-                <section class="contact-form" aria-labelledby="contact-heading">
-                    <h2 id="contact-heading">Contact Us</h2>
-
-                    <form action="#" method="post" novalidate>
-
-                        <div class="form-row">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name"
-                              required autocomplete="name">
-                        </div>
-
-                        <div class="form-row">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email"
-                              placeholder="you@example.com" required autocomplete="email">
-                        </div>
-
-                        <div class="form-row">
-                            <label>Message<br>Purpose</label>
-                            <div class="radio-group" role="radiogroup" aria-label="Message purpose">
-
-                                <label for="general">
-                                    <input type="radio" id="general" name="purpose" value="general"
-                                      checked>
-                                    General Inquiry
-                                </label>
-
-                                <label for="reservation">
-                                    <input type="radio" id="reservation" name="purpose"
-                                      value="reservation">
-                                    Reservation Question
-                                </label>
-
-                                <label for="suggestion">
-                                    <input type="radio" id="suggestion" name="purpose"
-                                      value="suggestion">
-                                    Website Suggestion
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message"
-                              placeholder="Type your message here..." required></textarea>
-                        </div>
-
-                        <label class="newsletter-row" for="newsletter">
-                            <input type="checkbox" id="newsletter" name="newsletter" value="yes"
-                              checked>
-                            Please subscribe me to the monthly newsletter.
-                        </label>
-
-                        <button type="submit" class="btn-submit">Get in touch!</button>
-
-                    </form>
-                </section>
-            </div>
-
-            <!-- Team section -->
-            <section class="team-section" aria-labelledby="team-heading">
-                <h2 id="team-heading">We Are Here to Serve You!</h2>
-                <div class="team-grid">
-
-                    <div class="team-card">
-                        <img src="images/employee1.jpg" alt="Guide Alex Rivera">
-                        <p class="name">Alex Rivera</p>
-                        <p class="role">Lead River Guide</p>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name"
+                          required autocomplete="name">
                     </div>
 
-                    <div class="team-card">
-                        <img src="images/employee2.jpg" alt="Guide Jordan Shepherd">
-                        <p class="name">Jordan Shepherd</p>
-                        <p class="role">Safety Coordinator</p>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com"
+                          required autocomplete="email">
                     </div>
 
-                    <div class="team-card">
-                        <img src="images/employee3.jpg"
-                          alt="Reservation Specialist Samantha Keeper">
-                        <p class="name">Samantha Keeper</p>
-                        <p class="role">Reservation Specialist</p>
+                    <div class="form-row">
+                        <label>Message Purpose</label>
+                        <div class="radio-group" role="radiogroup" aria-label="Message purpose">
+
+                            <label for="general">
+                                <input type="radio" id="general" name="purpose" value="general"
+                                  checked>
+                                General Inquiry
+                            </label>
+
+                            <label for="reservation">
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation">
+                                Reservation Question
+                            </label>
+
+                            <label for="suggestion">
+                                <input type="radio" id="suggestion" name="purpose"
+                                  value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
                     </div>
 
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"
+                          placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <label class="newsletter-row">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes"
+                          checked>
+                        Please subscribe me to the monthly newsletter.
+                    </label>
+
+                    <button type="submit" class="btn-submit">Get in touch!</button>
+
+                </form>
+            </section>
+        </div>
+
+        <!-- Team section -->
+        <section class="team-section" aria-labelledby="team-heading">
+            <h2 id="team-heading">We Are Here to Serve You!</h2>
+            <div class="team-grid">
+
+                <div class="team-card">
+                    <img src="images/employee1.jpg" alt="Guide Alex Rivera">
+                    <p class="name">Alex Rivera</p>
+                    <p class="role">Lead River Guide</p>
                 </div>
-            </section>
 
-        </main>
+                <div class="team-card">
+                    <img src="images/employee2.jpg" alt="Guide Jordan Shepherd">
+                    <p class="name">Jordan Shepherd</p>
+                    <p class="role">Safety Coordinator</p>
+                </div>
 
-        <!-- Footer -->
-        <footer>
-            <p class="copyright">
-                &copy; 2026 Rafting Travel Co. | Jorge Lima
-            </p>
+                <div class="team-card">
+                    <img src="images/employee3.jpg" alt="Reservation Specialist Samantha Keeper">
+                    <p class="name">Samantha Keeper</p>
+                    <p class="role">Reservation Specialist</p>
+                </div>
 
-            <!-- nav element class assignment "socialmedia"/ 3 "img" encased by "a"anchor three social media outlets -->
-            <nav class="socialmedia">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/facebook-square.svg" alt="Facebook Icon">
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin-square.svg" alt="LinkedIn Icon">
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/instagram-square.svg" alt="Instagram Icon">
-                </a>
-            </nav>
+            </div>
+        </section>
 
-        </footer>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">
+            &copy; 2026 Rafting Travel Co. | Jorge Lima
+        </p>
+
+        <!-- nav element class assignment "socialmedia"/ 3 "img" encased by "a"anchor three social media outlets -->
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-square.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin-square.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-square.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+
+    </footer>
 
 </body>
 
