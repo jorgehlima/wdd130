@@ -156,17 +156,19 @@ footer {
     display: block;
 }
 
-.page-about .hero h1 {
+.page-about .hero h1,
+.page-contact .hero h1 {
     position: absolute;
     top: 1.5rem;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
+    white-space: nowrap;
+    width: 1100px;
     color: #ffffff;
-
     padding: 0.5rem 1.5rem;
     background-color: var(--accent1-color);
-    opacity: 0.65;
+    opacity: 0.55;
 }
 
 .hero article img {
@@ -178,7 +180,7 @@ footer {
 
 .hero article {
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
