@@ -171,7 +171,12 @@ footer {
     opacity: 0.55;
 }
 
+/*  mission statement section - About us page */
 .hero .hero-caption img {
+    order: 2;
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
     border-radius: 8px;
 }
 
@@ -196,6 +201,7 @@ footer {
     margin-bottom: 0;
 }
 
+/* mission statement paragraph stays on the left */
 .hero .hero-caption p {
     flex: 1;
     order: 1;
@@ -244,7 +250,7 @@ footer {
 /* round corner of images - About us, Contact us */
 .history img,
 .adventures img,
-.hero article img {
+.hero .hero-caption img {
     border-radius: 8px;
 }
 
