@@ -136,8 +136,9 @@ footer {
     height: 24px;
 }
 
-/* Hero - About page Section */
-.page-about main {
+/* Hero - About us page Section */
+.page-about main,
+.page-contact main {
     padding-left: 0;
     padding-right: 0;
 }
@@ -149,7 +150,8 @@ footer {
     margin-top: -2.5rem;
 }
 
-.page-about .hero > img:first-child {
+.page-about .hero > img:first-child,
+.page-contact .hero > img:first-child {
     width: 100%;
     display: block;
 }
@@ -168,19 +170,21 @@ footer {
 }
 
 .hero article img {
-    width: 180px;
+    width: 150px;
     height: auto;
     flex-shrink: 0;
+    order: 2;
 }
 
 .hero article {
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -190,10 +194,12 @@ footer {
     color: var(--accent1-color);
     border: 1px solid #ccc;
     margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .hero article p {
     flex: 1;
+    order: 1;
 }
 
 /* History Section - About us */
