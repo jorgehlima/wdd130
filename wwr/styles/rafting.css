@@ -442,16 +442,14 @@ footer {
     cursor: pointer;
 }
 
-/* Team Section */
+/*  Team Section - Contact us page */
+/* Team Section - Contact page */
 .team-section {
-    border: 1px solid var(--contact-border);
-    border-radius: var(--radius);
-    padding: 2rem;
-    margin-top: 2.5rem;
+    padding: 2rem 0;
 }
 
 .team-section h2 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     margin-bottom: 1.75rem;
     text-align: center;
     color: var(--secondary-color);
@@ -477,7 +475,6 @@ footer {
     object-fit: cover;
     border-radius: var(--radius);
     border: 1px solid var(--contact-border);
-    background-color: #dde6ea;
     margin-bottom: .6rem;
     box-shadow: var(--contact-shadow);
 }
@@ -491,12 +488,6 @@ footer {
 .team-card .role {
     font-size: .85rem;
     color: var(--stone-gray);
-}
-
-@media (max-width: 600px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Submit Button - Contact page*/
