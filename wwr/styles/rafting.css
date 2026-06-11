@@ -250,7 +250,7 @@ footer {
 /* round corner of images - About us, Contact us */
 .history img,
 .adventures img,
-.hero .hero-caption img {
+.hero article img {
     border-radius: 8px;
 }
 
