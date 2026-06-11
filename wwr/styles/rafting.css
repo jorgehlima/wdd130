@@ -171,14 +171,11 @@ footer {
     opacity: 0.55;
 }
 
-.hero article img {
-    width: 150px;
-    height: auto;
-    flex-shrink: 0;
-    order: 2;
+.hero .hero-caption img {
+    border-radius: 8px;
 }
 
-.hero article {
+.hero .hero-caption {
     position: absolute;
     bottom: 4rem;
     left: 50%;
@@ -199,7 +196,7 @@ footer {
     margin-bottom: 0;
 }
 
-.hero article p {
+.hero .hero-caption p {
     flex: 1;
     order: 1;
 }
