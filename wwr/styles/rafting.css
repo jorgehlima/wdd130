@@ -172,7 +172,7 @@ footer {
 }
 
 /*  mission statement section - About us page */
-.hero .hero-caption img {
+.hero article img {
     order: 2;
     width: 150px;
     height: auto;
@@ -180,7 +180,7 @@ footer {
     border-radius: 8px;
 }
 
-.hero .hero-caption {
+.hero article {
     position: absolute;
     bottom: 4rem;
     left: 50%;
@@ -202,7 +202,7 @@ footer {
 }
 
 /* mission statement paragraph stays on the left */
-.hero .hero-caption p {
+.hero article p {
     flex: 1;
     order: 1;
 }
