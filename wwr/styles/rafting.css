@@ -198,7 +198,6 @@ footer {
     background-color: rgba(255, 255, 255, 0.45);
     color: var(--accent1-color);
     border: 1px solid #ccc;
-    margin-bottom: 16px;
     margin-bottom: 0;
 }
 
