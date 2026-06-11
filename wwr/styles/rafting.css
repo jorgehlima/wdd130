@@ -499,19 +499,10 @@ footer {
     background: var(--rapid-orange);
     color: #fff;
     border: none;
-    border-radius: var(--radius);
-    font-family: var(--body-font);
+
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .04em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform .1s;
-}
-
-.btn-submit:hover {
-    background-color: #9e4f18;
-}
-
-.btn-submit:active {
-    transform: scale(.98);
 }
