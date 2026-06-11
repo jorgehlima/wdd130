@@ -1,108 +1,100 @@
 <!-- 11 June 2026 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- meta/title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us | Rafting Travel Corporation</title>
 
-    <!-- meta description -->
     <meta name="description"
-      content="Contact Rafting Travel Co. for trips reservations, questions, customer support, and information about our exciting rafting adventures.">
+      content="Contact Rafting Travel Co. for trip reservations, questions, customer support, and information about our rafting adventures.">
 
-    <!-- meta author -->
     <meta name="author" content="Jorge Henrique de Souza Lima">
-    <link rel="stylesheet" href="styles/rafting.css">
 
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
     <header>
-        <!-- Logo -->
         <a href="index.html">
-            <img src="images/logo.jpg" alt="Go to home page">
+            <img src="images/logo.jpg" alt="Rafting Travel Co. Home">
         </a>
 
-        <!-- navigation list -->
         <nav>
             <a href="index.html"><strong>Home</strong></a>
             <a href="about.html"><strong>About Us</strong></a>
             <a href="trips.html"><strong>Trips</strong></a>
             <a href="contact.html" aria-current="page"><strong>Contact Us</strong></a>
         </nav>
-
     </header>
 
     <main>
 
-        <!-- Hero -->
+        <!-- HERO -->
         <div class="hero">
             <h1>Contact Us</h1>
             <p>We are here to serve you!</p>
         </div>
 
-        <!-- section element with company info -->
+        <!-- COMPANY INFO -->
         <section class="company-info">
-            <h1>Rafting Travel Corporation</h1>
+            <h2>Rafting Travel Corporation</h2>
+
             <address>
                 <strong>123 River Adventure Road</strong><br>
                 Wilmington, NC 28403<br>
-                <a href="tel:+19999999999">Phone: (435) 123-RAFT</a><br>
-                <a href="mailto:info@raftingtravelco.com">info@wildwaterrafting.com</a>
+                <a href="tel:+14351237728">(435) 123-RAFT</a><br>
+                <a href="mailto:info@wildwaterrafting.com">info@wildwaterrafting.com</a>
             </address>
         </section>
 
-        <!-- map + form -->
+        <!-- MAP + FORM GRID -->
         <div class="contact-grid">
 
-            <!-- google map -->
+            <!-- MAP -->
             <section class="map-wrap" aria-label="Map showing our location">
-                <iframe title="Google Maps location of Wild Water Rafting Co., Wilmington, NC"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.9!2d-77.9447!3d34.2257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f5f5f5f5f5f5%3A0x0!2sWilmington%2C+NC+28403!5e0!3m2!1sen!2sus!4v1690000000000"
+                <iframe title="Wild Water Rafting Co. Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.9!2d-77.9447!3d34.2257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2sWilmington%2C%20NC%2028403"
                   allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </section>
 
-            <!-- Contact Form -->
+            <!-- FORM -->
             <section class="contact-form" aria-labelledby="contact-heading">
+
                 <h2 id="contact-heading">Contact Us</h2>
 
-                <form action="#" method="post" novalidate>
+                <form action="#" method="post">
 
                     <div class="form-row">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name"
-                          required autocomplete="name">
+                        <input type="text" id="name" name="name" required autocomplete="name">
                     </div>
 
                     <div class="form-row">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com"
-                          required autocomplete="email">
+                        <input type="email" id="email" name="email" required autocomplete="email">
                     </div>
 
                     <div class="form-row">
-                        <label>Message Purpose</label>
-                        <div class="radio-group" role="radiogroup" aria-label="Message purpose">
+                        <span class="form-label">Message Purpose</span>
 
-                            <label for="general">
-                                <input type="radio" id="general" name="purpose" value="general"
-                                  checked>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="purpose" value="general" checked>
                                 General Inquiry
                             </label>
 
-                            <label for="reservation">
-                                <input type="radio" id="reservation" name="purpose"
-                                  value="reservation">
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
                                 Reservation Question
                             </label>
 
-                            <label for="suggestion">
-                                <input type="radio" id="suggestion" name="purpose"
-                                  value="suggestion">
+                            <label>
+                                <input type="radio" name="purpose" value="suggestion">
                                 Website Suggestion
                             </label>
                         </div>
@@ -110,8 +102,7 @@
 
                     <div class="form-row">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                          placeholder="Type your message here..." required></textarea>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
 
                     <label class="newsletter-row">
@@ -123,53 +114,56 @@
                     <button type="submit" class="btn-submit">Get in touch!</button>
 
                 </form>
+
             </section>
         </div>
 
-        <!-- Team section -->
+        <!-- TEAM -->
         <section class="team-section" aria-labelledby="team-heading">
+
             <h2 id="team-heading">We Are Here to Serve You!</h2>
+
             <div class="team-grid">
 
                 <div class="team-card">
-                    <img src="images/employee1.jpg" alt="Guide Alex Rivera">
+                    <img src="images/employee1.jpg" alt="Alex Rivera">
                     <p class="name">Alex Rivera</p>
                     <p class="role">Lead River Guide</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/employee2.jpg" alt="Guide Jordan Shepherd">
+                    <img src="images/employee2.jpg" alt="Jordan Shepherd">
                     <p class="name">Jordan Shepherd</p>
                     <p class="role">Safety Coordinator</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/employee3.jpg" alt="Reservation Specialist Samantha Keeper">
+                    <img src="images/employee3.jpg" alt="Samantha Keeper">
                     <p class="name">Samantha Keeper</p>
                     <p class="role">Reservation Specialist</p>
                 </div>
 
             </div>
+
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer>
+
         <p class="copyright">
             &copy; 2026 Rafting Travel Co. | Jorge Lima
         </p>
 
-        <!-- nav element class assignment "socialmedia"/ 3 "img" encased by "a"anchor three social media outlets -->
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook-square.svg" alt="Facebook Icon">
+                <img src="images/facebook-square.svg" alt="Facebook">
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin-square.svg" alt="LinkedIn Icon">
+                <img src="images/linkedin-square.svg" alt="LinkedIn">
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram-square.svg" alt="Instagram Icon">
+                <img src="images/instagram-square.svg" alt="Instagram">
             </a>
         </nav>
 
