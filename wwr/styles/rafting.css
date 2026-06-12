@@ -221,13 +221,6 @@ footer {
     padding: 2rem 1.5rem;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    width: 100%;
-}
-
 .map-wrap,
 .contact-form {
     width: 100%;
@@ -357,6 +350,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
+    width: 100%;
 }
 
 /* Contact Grid - Contact page */

@@ -51,7 +51,7 @@
 
         </div><!-- hero closed -->
 
-        <section class="contact-grid-wrapper">
+        <div class="contact-grid-wrapper">
 
             <div class="contact-grid">
 
@@ -80,15 +80,24 @@
                               required autocomplete="email">
                         </div>
 
+                        <!-- Form, radio, newsletter and button section -->
                         <div class="form-row">
                             <span class="form-label">Message Purpose</span>
+
                             <div class="radio-group">
-                                <label><input type="radio" name="purpose" value="general" checked>
-                                    General Inquiry</label>
-                                <label><input type="radio" name="purpose" value="reservation">
-                                    Reservation Question</label>
-                                <label><input type="radio" name="purpose" value="suggestion">
-                                    Website Suggestion</label>
+
+                                <input type="radio" id="general" name="purpose" value="general"
+                                  checked>
+                                <label for="general">General Inquiry</label>
+
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation">
+                                <label for="reservation">Reservation Question</label>
+
+                                <input type="radio" id="suggestion" name="purpose"
+                                  value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+
                             </div>
                         </div>
 
@@ -111,7 +120,7 @@
 
             </div><!-- contact-grid closed -->
 
-        </section><!-- Contact grid wrapper closed -->
+        </div><!-- Contact grid wrapper closed -->
 
         <!-- Team section w/ title and five pics -->
         <section class="team-section">
