@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | Rafting Travel Corporation</title>
+    <title>Contact Us | Rafting Travel Company</title>
 
     <meta name="description"
-      content="Contact Rafting Travel Co. for trip reservations, questions, customer support, and information about our rafting adventures.">
+      content="Contact Rafting Travel Company — reach out for trip reservations, general inquiries, or customer support for our rafting adventures.">
 
     <meta name="author" content="Jorge Henrique de Souza Lima">
 
@@ -19,8 +19,9 @@
 <body class="page-contact">
 
     <header>
+
         <!-- Logo img -->
-        <img src="images/logo.jpg" alt="Rafting Travel Co. Home">
+        <img src="images/logo.jpg" alt="Rafting Travel Company Logo">
 
         <!-- Navigation links -->
         <nav>
@@ -32,131 +33,126 @@
     </header>
 
     <main>
-        <!-- div class hero section -->
+
+        <!-- Hero div section  -->
         <div class="hero">
             <img src="images/contact-hero.png"
               alt="Cartoon smoke signal representing communication">
 
-            <h1>Rafting Travel Corporation</h1>
+            <h1>Rafting Travel Company</h1>
 
+            <!-- Article section -->
             <article>
 
-                <!-- Company info section -->
+                <!-- Company Info -->
                 <section class="company-info">
                     <address>
                         <strong>2504 Confederate Dr.</strong><br>
                         Wilmington, NC 28403<br>
-                        <a href="tel:+14351237728">(435) 123-RAFT-7238</a><br>
+                        <a href="tel:+14351237728">(435) 123-7238</a><br>
                         <a href="mailto:info@raftingtravelco.com">info@raftingtravelco.com</a>
                     </address>
-
                 </section>
+
+                <!-- Map / Form Grid -->
+                <div class="contact-grid">
+
+                    <!-- Map -->
+                    <div class="map-wrap" aria-label="Map showing our location">
+                        <iframe title="Rafting Travel Co. Location"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4385.444048011335!2d-77.9195634879127!3d34.22946930823793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f57aa96d9b89%3A0x5f8cbdc86ac19b1c!2s2504%20Confederate%20Dr%2C%20Wilmington%2C%20NC%2028403!5e1!3m2!1sen!2sus!4v1781202301452!5m2!1sen!2sus"
+                          width="600" height="450" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="contact-form" aria-labelledby="contact-heading">
+
+                        <form action="#" method="post">
+
+                            <div class="form-row">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required
+                                  autocomplete="name">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required
+                                  autocomplete="email">
+                            </div>
+
+                            <div class="form-row">
+                                <span class="form-label">Message Purpose</span>
+
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="purpose" value="general" checked>
+                                        General Inquiry
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="purpose" value="reservation">
+                                        Reservation Question
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="purpose" value="suggestion">
+                                        Website Suggestion
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+
+                            <label class="newsletter-row">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes"
+                                  checked>
+                                Please subscribe me to the monthly newsletter.
+                            </label>
+
+                            <button type="submit" class="btn-submit">Get in Touch!</button>
+
+                        </form>
+
+                    </div>
+
+                </div> <!-- contact grid closed -->
 
             </article>
 
-        </div>
+        </div> <!-- class hero section closed -->
 
-
-        </section>
-
-        <!-- Map/Form Grid Section -->
-        <div class="contact-grid">
-
-            <!-- Map -->
-            <section class="map-wrap" aria-label="Map showing our location">
-                <iframe title="Rafting Travel Co. Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4385.444048011335!2d-77.9195634879127!3d34.22946930823793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f57aa96d9b89%3A0x5f8cbdc86ac19b1c!2s2504%20Confederate%20Dr%2C%20Wilmington%2C%20NC%2028403!5e1!3m2!1sen!2sus!4v1781202301452!5m2!1sen!2sus"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </section>
-
-            <!-- Form -->
-            <section class="contact-form" aria-labelledby="contact-heading">
-
-                <form action="#" method="post">
-
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required autocomplete="name">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
-                    </div>
-
-                    <div class="form-row">
-                        <span class="form-label">Message Purpose</span>
-
-                        <div class="radio-group">
-                            <label>
-                                <input type="radio" name="purpose" value="general" checked>
-                                General Inquiry
-                            </label>
-
-                            <label>
-                                <input type="radio" name="purpose" value="reservation">
-                                Reservation Question
-                            </label>
-
-                            <label>
-                                <input type="radio" name="purpose" value="suggestion">
-                                Website Suggestion
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-
-                    <label class="newsletter-row">
-                        <input type="checkbox" id="newsletter" name="newsletter" value="yes"
-                          checked>
-                        Please subscribe me to the monthly newsletter.
-                    </label>
-
-                    <button type="submit" class="btn-submit">Get in touch!</button>
-
-                </form>
-
-            </section>
-        </div>
-
-        <!-- Team section -->
-        <section class="team-section" aria-labelledby="team-heading">
-
-            <h2 id="team-heading">We Are Here to Serve You!</h2>
+        <section class="team-section">
+            <h2>We Are Here to Server You</h2>
 
             <div class="team-grid">
 
                 <div class="team-card">
-                    <img src="images/employee1.jpg" alt="Alex Rivera">
-                    <p class="name">Alex Rivera</p>
-                    <p class="role">Lead River Guide</p>
+                    <img src="images/employee1.jpg" alt="Alex Rivera — Lead River Guide">
+                    <span class="name">Alex Rivera</span>
+                    <span class="role">Lead River Guide</span>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/employee2.jpg" alt="Jordan Shepherd">
-                    <p class="name">Jordan Shepherd</p>
-                    <p class="role">Safety Coordinator</p>
+                    <img src="images/employee2.jpg" alt="Jordan Shepherd — Safety Coordinator">
+                    <span class="name">Jordan Shepherd</span>
+                    <span class="role">Safety Coordinator</span>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/employee3.jpg" alt="Samantha Keeper">
-                    <p class="name">Samantha Keeper</p>
-                    <p class="role">Reservation Specialist</p>
+                    <img src="images/employee3.jpg" alt="Samantha Keeper — Reservation Specialist">
+                    <span class="name">Samantha Keeper</span>
+                    <span class="role">Reservation Specialist</span>
                 </div>
 
             </div>
-
         </section>
 
     </main>
 
-    <!-- Footer section -->
     <footer>
 
         <p class="copyright">
