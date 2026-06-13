@@ -40,6 +40,7 @@ h1,
 h2,
 h3 {
     font-family: var(--heading-font);
+    color: var(--white);
 }
 
 /* Shared Layout */
@@ -149,14 +150,6 @@ footer {
     margin-bottom: 0;
 }
 
-.hero {
-    position: relative;
-    height: 360px;
-    /* Hero size */
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-
 .page-about .hero > img:first-child,
 .page-contact .hero > img:first-child {
     width: 100%;
@@ -177,21 +170,39 @@ footer {
     max-width: 1100px;
 }
 
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    /* Hero size */
+    padding-bottom: 20px;
+}
+
 .hero img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* THIS is the key "background behavior" */
-    display: block;
+    z-index: 0;
 }
 
 /*  mission statement section - About us page */
 .hero article img {
-    float: right;
-    order: 2;
     width: 150px;
     height: auto;
-    flex-shrink: 0;
+    border-radius: 8px;
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
 }
 
 .hero article {
@@ -203,8 +214,8 @@ footer {
     width: 90%;
     max-width: 900px;
 
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 150px;
     align-items: center;
     gap: 1.5rem;
 
@@ -212,14 +223,14 @@ footer {
     border-radius: 12px;
 
     background: rgba(0, 0, 0, 0.35);
-    /* semi-transparent box */
-    color: #fff;
 }
 
 .hero article p {
-    flex: 1;
+    grid-column: 1;
+    grid-row: 1;
     margin: 0;
     line-height: 1.6;
+    color: var(--white) !important;
 }
 
 .contact-grid-wrapper {
@@ -227,7 +238,7 @@ footer {
     z-index: 2;
 
     max-width: 1100px;
-    margin: -40px auto 0 auto;
+    margin: 0 auto;
 
     padding: 2rem 1.5rem;
 }
@@ -397,7 +408,8 @@ footer {
     align-items: center;
 }
 
-.form-row > label {
+.form-row > label,
+.form-row > .form-label {
     font-size: .9rem;
     font-weight: bold;
     color: var(--stone-gray);
