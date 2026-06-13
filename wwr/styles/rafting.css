@@ -184,12 +184,11 @@ footer {
 
 /*  mission statement section - About us page */
 .hero article img {
+    float: right;
     width: 150px;
     height: auto;
     border-radius: 8px;
-    justify-self: end;
-    align-self: center;
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .hero > img {
@@ -234,22 +233,19 @@ footer {
     width: 90%;
     max-width: 900px;
 
-    display: grid;
-    grid-template-columns: 1fr 150px;
-    align-items: center;
-    gap: 1.5rem;
-
     padding: 1.25rem;
     border-radius: 12px;
-
     background: rgba(0, 0, 0, 0.35);
+
+    overflow: hidden;
+    /* clearfix for the float */
 }
 
 .hero article p {
     grid-column: 1;
     grid-row: 1;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.3;
     color: var(--white) !important;
 }
 
@@ -627,6 +623,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
+    margin-bottom: 8rem;
+    /* pushes newsletter down */
 }
 
 .grid-item {
