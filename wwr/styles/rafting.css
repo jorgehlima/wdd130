@@ -163,24 +163,17 @@ footer {
 }
 
 /* Company name - About us and Contact us */
-.page-about .hero h1 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 2;
-    text-align: center;
-}
-
+.page-about .hero h1,
 .page-contact .hero h1 {
     position: absolute;
-    top: 35%;
+    top: 1.5rem;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     color: white;
     z-index: 2;
     text-align: center;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .hero img {
