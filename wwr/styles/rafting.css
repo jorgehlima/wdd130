@@ -184,7 +184,6 @@ footer {
 
 /*  mission statement section - About us page */
 .hero article img {
-    float: right;
     width: 150px;
     height: auto;
     border-radius: 8px;
@@ -584,6 +583,23 @@ footer {
 }
 
 /* Home page section */
+/* Home page - image before paragraph in HTML, floats right */
+.page-home .hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+/* About page - image after paragraph in HTML, floats right */
+.page-about .hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
 
 /* Hero text overlay */
 .hero-text {
