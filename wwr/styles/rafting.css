@@ -365,7 +365,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
-
+    align-items: stretch;
     max-width: 1000px;
     /* controls visual width */
     margin: 0 auto;
