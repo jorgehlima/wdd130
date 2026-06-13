@@ -605,7 +605,7 @@ footer {
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero-text p {
