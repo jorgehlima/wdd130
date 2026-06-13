@@ -1,5 +1,4 @@
 <!-- 13 June 2026 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,14 +16,12 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body class="page-contact">
+<body class="page-home">
 
+    <!-- Header section -->
     <header>
-
-        <!-- Logo img -->
         <img src="images/logo.jpg" alt="Rafting Travel Company Logo">
 
-        <!-- Navigation links -->
         <nav>
             <a href="index.html"><strong>Home</strong></a>
             <a href="about.html"><strong>About Us</strong></a>
@@ -33,14 +30,75 @@
         </nav>
     </header>
 
-    <!-- Main Section -->
+    <!-- Main section -->
     <main>
 
-        <!-- Hero div: must contain article with img -->
+        <!-- Hero section-->
         <div class="hero">
-            <img src="images/home-hero.jpg" alt="A cartoon of random communication devices">
+            <img src="images/home-hero.jpg"
+              alt="White water rafting adventure in a mountain river canyon">
+
             <h1>Rafting Travel Company</h1>
+
+            <div class="hero-text">
+                <p>Experience the thrill of whitewater rafting like never before.</p>
+                <a class="cta-button" href="trips.html">Explore Our Trips</a>
+            </div>
         </div>
 
+        <!-- Grid section -->
+        <section class="home-grid">
+
+            <div class="grid-item">
+                <img src="images/rafting1.jpg" alt="Rafters navigating fast rapids">
+                <h2>Adventure Trips</h2>
+                <p>Join guided rafting adventures through some of the most exciting rivers in the
+                    region.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/rafting2.jpg" alt="Scenic river rafting experience">
+                <h2>Scenic Tours</h2>
+                <p>Relax and enjoy beautiful landscapes while floating through calm, scenic waters.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Newsletter form section -->
+        <section class="newsletter">
+
+            <h2>Join Our Newsletter</h2>
+
+            <form class="newsletter-form">
+                <label>
+                    Name:
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+
+                <button type="submit">Subscribe</button>
+            </form>
+
+        </section>
+
     </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copyright">© 2026 Rafting Travel Company | Jorge Lima</p>
+
+        <div class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+
 </body>
+
+</html>
