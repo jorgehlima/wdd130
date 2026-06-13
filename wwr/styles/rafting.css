@@ -549,6 +549,7 @@ footer {
     z-index: 1;
 }
 
+/* address color - Contant us page */
 .page-contact .company-info address,
 .page-contact .company-info address a {
     color: var(--white);
