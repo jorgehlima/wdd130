@@ -220,7 +220,7 @@ footer {
     z-index: 2;
     max-width: 1100px;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 0.5rem 1.5rem;
 }
 
 .map-wrap,
@@ -349,7 +349,7 @@ footer {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     align-items: stretch;
 }
 
@@ -369,8 +369,8 @@ footer {
 
 .map-wrap iframe {
     display: block;
-    width: 100%;
-    height: 420px;
+    width: 95%;
+    height: 400px;
     border: 0;
 }
 
@@ -381,7 +381,7 @@ footer {
 
 .form-row {
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 100px 1fr;
     align-items: center;
 }
 
@@ -411,11 +411,11 @@ footer {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(5, 90, 5, .15);
-    /* updated to match --primary-color green */
 }
 
+/* Message text area - Contact us page */
 .form-row textarea {
-    height: 110px;
+    height: 90px;
     resize: vertical;
 }
 
