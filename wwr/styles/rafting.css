@@ -211,13 +211,14 @@ footer {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 1.5rem;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translateX(-50%);
     color: var(--white);
     z-index: 3;
+    text-align: center;
     width: 100%;
+    max-width: 1100px;
 }
 
 .hero-text {
@@ -641,11 +642,22 @@ footer {
 
 /* Newsletter section - index page */
 .newsletter {
-    margin-top: 3rem;
+    width: 100%;
+    margin: 3rem auto 0;
     padding: 2rem;
+
     text-align: center;
-    background: rgba(5, 90, 5, 0.08);
+
+    border: 1px solid var(--secondary-color);
     border-radius: var(--radius);
+
+    box-sizing: border-box;
+}
+
+.newsletter h2 {
+    color: var(--secondary-color);
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
 }
 
 .newsletter-form {
@@ -656,13 +668,18 @@ footer {
     margin: 0 auto;
 }
 
+/* Make inputs full width */
 .newsletter-form input {
+    width: 85%;
     padding: 0.5rem;
     border: 1px solid var(--contact-border);
     border-radius: var(--radius);
+    box-sizing: border-box;
 }
 
+/* Make button match same width */
 .newsletter-form button {
+    width: 100%;
     padding: 0.75rem;
     background: var(--primary-color);
     color: white;
