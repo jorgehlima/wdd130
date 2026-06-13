@@ -363,9 +363,12 @@ footer {
 /* Contact Grid (map/form) - Contact page */
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    align-items: stretch;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    max-width: 1000px;
+    /* controls visual width */
+    margin: 0 auto;
 }
 
 /* Contact Grid - Contact page */
