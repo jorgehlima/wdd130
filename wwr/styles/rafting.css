@@ -160,10 +160,11 @@ footer {
     display: block;
 }
 
+/* Company name - About us and Contact us */
 .page-about .hero h1,
 .page-contact .hero h1 {
     position: absolute;
-    top: 1.5rem;
+    top: 1rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -315,9 +316,8 @@ footer {
     color: var(--accent1-color);
 }
 
-/* Company Info Section - Contact page */
+/* Company Info Section - Contact us page */
 .company-info {
-
     text-align: center;
     margin-bottom: 2.5rem;
     width: 100%;
@@ -333,7 +333,7 @@ footer {
 .company-info address {
     font-style: normal;
     font-size: 1rem;
-    line-height: 1.9;
+    line-height: 1.5;
 }
 
 .company-info address a {
