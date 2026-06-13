@@ -844,3 +844,7 @@ footer {
     color: var(--white);
 
 }
+
+.trips-cta .cta-button {
+    margin-top: 1rem;
+}
