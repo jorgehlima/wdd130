@@ -139,6 +139,7 @@ footer {
 /* Hero - About us page Section */
 .page-about main,
 .page-contact main {
+    padding-top: 0;
     padding-left: 0;
     padding-right: 0;
 }
