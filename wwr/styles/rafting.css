@@ -152,6 +152,26 @@ footer {
     margin-bottom: 0;
 }
 
+.page-home .hero,
+.page-about .hero,
+.page-trips .hero,
+.page-contact .hero {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+}
+
+.page-home .hero > img,
+.page-about .hero > img,
+.page-trips .hero > img,
+.page-contact .hero > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .page-about .hero > img:first-child,
 .page-contact .hero > img:first-child {
     width: 100%;
@@ -177,9 +197,9 @@ footer {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 360px;
+    height: 350px;
     /* Hero size */
-    padding-bottom: 20px;
+
 }
 
 /*  mission statement section - About us page */
@@ -197,6 +217,7 @@ footer {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    object-position: center top;
 }
 
 .hero::before {
@@ -573,7 +594,7 @@ footer {
     z-index: 1;
 }
 
-/* address color - Contant us page */
+/* address color - Contact us page */
 .page-contact .company-info address,
 .page-contact .company-info address a {
     color: var(--white);
@@ -581,7 +602,8 @@ footer {
 
 /* Home page section */
 /* Home page - image before paragraph in HTML, floats right */
-.page-home .hero article img {
+.page-home .hero article img,
+.page-about .hero article img {
     float: right;
     width: 150px;
     height: auto;
@@ -725,22 +747,15 @@ footer {
 /* Trips Page */
 .page-trips .hero article img {
     float: right;
-
     width: 150px;
-
     height: auto;
-
     border-radius: 8px;
-
     margin-left: 1rem;
 }
 
 .trips-cta {
-
     text-align: center;
-
     padding: 2rem 0;
-
 }
 
 .trips-cta h2 {
